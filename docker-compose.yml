@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1234:8080"
+    environment:
+      - GIN_MODE=release
+    env_file:
+      - .env
