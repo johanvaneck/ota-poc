@@ -1,0 +1,4 @@
+*.bin
+main
+tmp
+.DS_Store
